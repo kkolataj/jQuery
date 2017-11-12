@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jQuery test - Hide images, Find and replace any words</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/custom_KK.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/btn_hide_img.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <div class="navbar-header"><button class="btn btn-primary" onclick="hide_img()" type="button" id="myHideBtn">Hide images</button>
+        <button class="btn btn-default" type="button" id="myFReplace">Find&#38;Replace</button></div>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ <div id="replace_feature" >
+        <!--FIND AND REPLACE-->
+        <fieldset>
+            <legend>Znajdź i zamień wybrane słowo</legend>
+            <table class="table-style-one">
+                <tr>
+                    <td>Zmień z: </td>
+                    <td>
+                        <input id="needle" name="needle" type="text">
+                    </td>
+                    <td>na: </td>
+                    <td>
+                        <input id="replacement" name="replacement" type="text">
+                    </td>
+                    <td>
+                        <input id="replace_btn" type="button" value="Replace">
+                        <td> Zmieniono: </td>
+                        <td>
+                            <input id="counter" type="text" disabled>
+                        </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header id="replace_content" class="jumbotron my-4">
+        <h1 class="display-3">Ojciec Chrzestny</h1>
+        <p class="lead">Jedna z najwybitniejszych powieści XX wieku, zekranizowana przez Francisa Forda Coppolę z genialnymi rolami Marlona Brando i Ala Pacino. Porywająca opowieść o honorze i nienawiści, szacunku i pogardzie, miłości i śmierci. Za każdą wielką fortuną kryje się zbrodnia Balzac Vito Corleone jest Ojcem Chrzestnym jednej z sześciu nowojorskich rodzin mafijnych. Sprawuje rządy żelazną ręką, a ci, którzy nie podporządkowują się jego decyzjom, nie mogą liczyć na łaskę. To człowiek honoru, ale zarazem tyran i szantażysta, który wśród wrogów wzbudza strach, a wśród przyjaciół – zasłużony, choć nie całkiem bezinteresowny, szacunek. Kiedy odmawia uczestnictwa w nowym, niezwykle opłacalnym interesie – handlu narkotykami – wchodzi w ostry konflikt z cosa nostrą. Przyszłość rodziny może uratować tylko najmłodszy syn Vita, Michael, bohater wojenny, który z brudnymi interesami nie chciał mieć nic wspólnego. Czy okaże się godnym następcą Ojca Chrzestnego?</p>
+        <a href="#" class="btn btn-primary btn-lg">Kup online!</a>
+      </header>
+
+      <!-- Page Features 1 -->
+      <div class="row text-center">
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="img/book.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Ojciec Chrzestny</h4>
+              <ul>
+                  <li><strong>Tytuł&#x3A;</strong> Ojciec Chrzestny</li>
+                  <li><strong>Autor&#x3A;</strong> Puzo Mario</li>
+                  <li><strong>Tłumaczenie&#x3A;</strong> Zieliński Bronisław</li>
+                  <li><strong>Wydawnictwo&#x3A;</strong> Wydawnictwo Albatros</li>
+                  <li><strong>Język wydania&#x3A;</strong> polski</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Dodaj do koszyka</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="img/book.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Ojciec Chrzestny</h4>
+              <ul>
+                  <li><strong>Tytuł&#x3A;</strong> Ojciec Chrzestny</li>
+                  <li><strong>Autor&#x3A;</strong> Puzo Mario</li>
+                  <li><strong>Tłumaczenie&#x3A;</strong> Zieliński Bronisław</li>
+                  <li><strong>Wydawnictwo&#x3A;</strong> Wydawnictwo Albatros</li>
+                  <li><strong>Język wydania&#x3A;</strong> polski</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Dodaj do koszyka</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card">
+            <img class="card-img-top" src="img/book.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Ojciec Chrzestny</h4>
+              <ul>
+                  <li><strong>Tytuł&#x3A;</strong> Ojciec Chrzestny</li>
+                  <li><strong>Autor&#x3A;</strong> Puzo Mario</li>
+                  <li><strong>Tłumaczenie&#x3A;</strong> Zieliński Bronisław</li>
+                  <li><strong>Wydawnictwo&#x3A;</strong> Wydawnictwo Albatros</li>
+                  <li><strong>Język wydania&#x3A;</strong> polski</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Dodaj do koszyka</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; <a href="http://art-up.zz.mu">art-up.zz.mu</a></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/find_replace.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#myFReplace").click(function(){
+        $("#replace_feature").fadeIn("slow");
+   
+    });
+});
+</script>
+
+  </body>
+
+</html>
